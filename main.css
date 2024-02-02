@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+}
+body{
+    min-height: 100vh;
+    font-size: 16px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* HEADER */
+header{
+    background-color: #0067DA;
+    padding: 20px 0 15px 0;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sobre img{
+    display: block;
+    width: 100%;
+    padding-top: 40px;
+}
+header h1{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav ul li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: .2s;
+}
+header nav ul li a:hover{
+    color: #ccc;
+}
+/* MAIN */
+main{
+    background-color: #eeeeee;
+}
+.container h2 {
+    font-size: 1.7em;
+    color: #0067DA;
+    padding: 20px 0;
+    border-bottom: 2px solid #0067DA;
+    font-style: italic;
+}
+.margem {
+    margin: 30px 0;
+}
+.sobre p {
+    font-size: 1.1em;
+}
+.lista-produtos{
+    display: block;
+    margin-top: 50px auto 0 auto;
+    text-align: center;
+}
+.lista-produtos li{
+    list-style: none;
+}
+.lista-produtos img{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+.lista-produtos h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.lista-produtos p {
+    font-size: 1.1em;
+}
+.lista-produtos button{
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0 30px 0;
+    background-color: #0067DA;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+.lista-produtos button:hover{
+    background-color: #064894;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        width: 80%;
+}
+header{
+    padding: 30px 0;
+}
+
+header nav ul{
+    flex-direction: row;
+    
+}
+header nav ul li{
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.lista-produtos{
+    display: grid;
+    grid-template-columns: 48% 48% ;
+    gap: 4%;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 100%;
+        max-width: 940px;
+}
+
+    header > .container{
+        font-size: 20px;
+    }
+    header nav ul{
+        flex-direction: row;
+        
+    }
+    header nav ul li{
+        margin-bottom: 0px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .lista-produtos{
+        display: grid;
+        grid-template-columns: repeat(4, 24%) ;
+        gap: 2%;
+    }
+.sobre{
+    display: grid;
+    grid-template-columns: repeat(2, 47%) ;
+    gap: 6%;
+}
+}
